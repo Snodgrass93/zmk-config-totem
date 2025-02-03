@@ -58,10 +58,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-                &kp Q  &kp W  &kp E  &kp R         &kp T            &kp Y      &kp U      &kp I      &kp O    &kp P
-                &kp A  &kp S  &kp D  &kp F         &kp G            &kp H      &kp J      &kp K      &kp L    &kp SEMICOLON
-&kp LEFT_SHIFT  &kp Z  &kp X  &kp C  &kp V         &kp B            &kp N      &kp M      &kp COMMA  &kp DOT  &kp FSLH       &kp SQT
-                              &mo 1  &kp LEFT_ALT  &kp BACKSPACE    &kp SPACE  &kp RCTRL  &kp ENTER
+                &kp Q  &kp W  &kp E  &kp R         &kp T            &kp Y                 &kp U      &kp I      &kp O    &kp P
+                &kp A  &kp S  &kp D  &kp F         &kp G            &kp H                 &kp J      &kp K      &kp L    &kp SEMICOLON
+&kp LEFT_SHIFT  &kp Z  &kp X  &kp C  &kp V         &kp B            &kp N                 &kp M      &kp COMMA  &kp DOT  &kp FSLH       &kp SQT
+                              &mo 1  &kp LEFT_ALT  &kp BACKSPACE    &mt LEFT_SHIFT SPACE  &kp RCTRL  &kp ENTER
             >;
         };
 
@@ -84,10 +84,30 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-                &none         &none           &none         &none         &none            &none           &none         &none      &kp LEFT_BRACKET  &kp RIGHT_BRACKET
-                &kp NUMBER_1  &kp NUMBER_2    &kp NUMBER_3  &kp NUMBER_4  &kp N5           &kp NUMBER_6    &kp N7        &kp N8     &kp N9            &kp N0
-&kp LEFT_SHIFT  &none         &kp LEFT_ARROW  &kp UP_ARROW  &kp DOWN      &kp RIGHT        &kp LEFT_ARROW  &kp UP_ARROW  &kp COMMA  &kp PERIOD        &kp QUESTION       &kp ESC
-                                              &trans        &trans        &kp BACKSPACE    &kp SPACE       &none         &trans
+                &none         &none           &none         &none         &none            &none           &kp MINUS         &kp EQUAL  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+                &kp NUMBER_1  &kp NUMBER_2    &kp NUMBER_3  &kp NUMBER_4  &kp N5           &kp NUMBER_6    &kp N7            &kp N8     &kp N9            &kp N0
+&kp LEFT_SHIFT  &none         &kp LEFT_ARROW  &kp UP_ARROW  &kp DOWN      &kp RIGHT        &kp LEFT_ARROW  &kp UP_ARROW      &kp COMMA  &kp PERIOD        &kp QUESTION       &kp ESC
+                                              &trans        &trans        &kp BACKSPACE    &kp SPACE       &kp LEFT_CONTROL  &tog 2
+            >;
+        };
+
+        MacLayer1 {
+            label = "MACBASE";
+            bindings = <
+                &kp Q  &kp W  &kp E  &kp R         &kp T            &kp Y                 &kp U             &kp I      &kp O    &kp P
+                &kp A  &kp S  &kp D  &kp F         &kp G            &kp H                 &kp J             &kp K      &kp L    &kp SEMICOLON
+&kp LEFT_SHIFT  &kp Z  &kp X  &kp C  &kp V         &kp B            &kp N                 &kp M             &kp COMMA  &kp DOT  &kp FSLH       &kp SQT
+                              &mo 1  &kp LEFT_ALT  &kp BACKSPACE    &mt LEFT_SHIFT SPACE  &kp LEFT_COMMAND  &kp ENTER
+            >;
+        };
+
+        MacLayer2 {
+            label = "MACBASE2";
+            bindings = <
+                &none         &none           &none         &none         &none            &none           &kp MINUS         &kp EQUAL  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+                &kp NUMBER_1  &kp NUMBER_2    &kp NUMBER_3  &kp NUMBER_4  &kp N5           &kp NUMBER_6    &kp N7            &kp N8     &kp N9            &kp N0
+&kp LEFT_SHIFT  &none         &kp LEFT_ARROW  &kp UP_ARROW  &kp DOWN      &kp RIGHT        &kp LEFT_ARROW  &kp UP_ARROW      &kp COMMA  &kp PERIOD        &kp QUESTION       &kp ESC
+                                              &trans        &trans        &kp BACKSPACE    &kp SPACE       &kp LEFT_COMMAND  &tog 0
             >;
         };
 
