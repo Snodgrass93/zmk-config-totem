@@ -215,5 +215,5 @@ label= "TVP 2"                             ;
                                         &trans      &kp LC(F12) &kp LC(F11)     &trans      &trans      &trans      
                         >;
                 };
-        };
+        }; 
 }; 
